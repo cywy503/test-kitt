@@ -5,6 +5,6 @@ build:
   artifact: mps-app-template
 deploy:
   skip: false
-  namespace: mps-test3
+  namespace: mps-test-4
   releaseType:
-    deployTimeOut: 800
+    deployTimeOut: 600
