@@ -7,4 +7,4 @@ deploy:
   skip: false
   namespace: mps-test-5
   releaseType:
-    deployTimeOut: 100
+    deployTimeOut: 200
