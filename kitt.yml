@@ -2,9 +2,9 @@ owner:
   group:mps
 build:
   skip: false
-  artifact: mps-app-team-template
+  artifact: mps-app-template
 deploy:
   skip: false
-  namespace: mps-test
+  namespace: mps-test1
   releaseType:
     deployTimeOut: 900
