@@ -1,7 +1,7 @@
 owner:
   group:mps
 build:
-  skip: true
+  skip: false
   artifact: mps-app-template
 deploy:
   skip: false
