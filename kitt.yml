@@ -15,7 +15,7 @@ build:
   skip: true
   artifact: mps-app-team-template
 deploy:
-  skip: false
+  skip: true
   namespace: mps-test
   releaseType:
     deployTimeout: 900
