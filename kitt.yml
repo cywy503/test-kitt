@@ -12,7 +12,7 @@ setup:
   releaseRefs: [ "main" ]
 
 build:
-  skip: false
+  skip: true
   artifact: mps-app-team-template
 deploy:
   skip: false
