@@ -1,10 +1,23 @@
 owner:
-  group:mps
+  group: mps_admin # change to your own AD group
+notify:
+  slack:
+    channelName: m0g0jcu-onboarding # change to your own Slack channel
+
+profiles:
+  - git://gdap-mystique:kafka-connect-kitt-assets:main:profiles/kcaas-profile-default-akeyless
+setup:
+  featureFlagMap:
+    useArtifactory: false
+  releaseRefs: [ "main" ]
+
 build:
-  skip: true
-  artifact: mps-app-template
+  skip: false
+  artifact: mps-app-team-template
 deploy:
   skip: false
-  namespace: mps-test-5
+  namespace: mps-test
   releaseType:
-    deployTimeOut: 300
+    deployTimeout: 900
+  helm:
+    values:
