@@ -8,11 +8,11 @@ profiles:
   - git://gdap-mystique:kafka-connect-kitt-assets:main:profiles/kcaas-profile-default-akeyless
 setup:
   featureFlagMap:
-    useArtifactory: false
+    useArtifactory: true
   releaseRefs: [ "main" ]
 
 build:
-  skip: false
+  skip: true
   artifact: mps-app-team-template
 deploy:
   skip: false
